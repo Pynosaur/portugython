@@ -1,24 +1,45 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
 [project]
 name = "portugython"
 version = "0.0.14"
 authors = [
-  { name="Victor Matos (@SpacemanY2K38)", email="spacemany2k38@gmail.com" },
+  { name = "Victor Matos (@SpacemanY2K38)", email = "spacemany2k38@gmail.com" },
 ]
 maintainers = [
-    { name="Victor Matos (@SpacemanY2K38)", email="spacemany2k38@gmail.com" },
+  { name = "Victor Matos (@SpacemanY2K38)", email = "spacemany2k38@gmail.com" },
 ]
 description = "A Portuguese translation of the Python functions/modules/packages"
 readme = "README.md"
 requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["python", "translation", "portuguese"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Natural Language :: Portuguese",
 ]
 
 [project.urls]
-"Homepage" = "https://byteram.co/spin-offs/pynosaur/portugython/"
-"Bug Tracker" = "https://github.com/Pynosaur/portugython/issues"
+Homepage = "https://byteram.co/spin-offs/pynosaur/portugython/"
+Bug Tracker = "https://github.com/Pynosaur/portugython/issues"
+Repository = "https://github.com/Pynosaur/portugython"
+Documentation = "https://github.com/Pynosaur/portugython#readme"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
