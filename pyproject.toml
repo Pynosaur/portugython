@@ -30,7 +30,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://byteram.co/spin-offs/pynosaur/portugython/"
-Bug Tracker = "https://github.com/Pynosaur/portugython/issues"
+"Bug Tracker" = "https://github.com/Pynosaur/portugython/issues"
 Repository = "https://github.com/Pynosaur/portugython"
 Documentation = "https://github.com/Pynosaur/portugython#readme"
 
